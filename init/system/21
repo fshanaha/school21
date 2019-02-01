@@ -1,0 +1,1 @@
+getent passwd {1000..60000} | cut -d ':' -f 1

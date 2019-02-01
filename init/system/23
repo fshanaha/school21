@@ -1,0 +1,2 @@
+ssh: ssh newuserlogin@ip -p port(optional)
+graphic session: menu->logout->switch user

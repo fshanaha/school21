@@ -1,0 +1,7 @@
+#kill user ssh
+ussh=$(who -a | grep pts)
+echo "select user: \n$ussh"
+echo -n "Enter user: "
+read user
+kuser=$(ps aux | grep ssh | grep $user | grep sshd | grep $user@ | awk '{print $2}')
+kill -9 $kuser
