@@ -6,7 +6,7 @@
 #    By: fshanaha <fshanaha@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/28 19:16:59 by fshanaha          #+#    #+#              #
-#    Updated: 2019/01/25 15:43:20 by fshanaha         ###   ########.fr        #
+#    Updated: 2019/03/07 19:22:45 by fshanaha         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ FILE = $(SRCS: .c=.o)
 all: $(NAME)
 
 $(NAME):
-	@gcc -c $(SRCS) -I $(HEADER)
+	@gcc -g -c $(SRCS) -I $(HEADER)
 	@ar rc $(NAME) *.o
 
 clean:
